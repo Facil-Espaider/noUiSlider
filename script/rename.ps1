@@ -1,0 +1,1 @@
+Move-Item -Path .\dist\nouislider.js -Destination .\dist\nouislider.mjs -Force
