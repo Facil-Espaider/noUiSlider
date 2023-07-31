@@ -1,8 +1,8 @@
-var slider1 = document.getElementById('disable1'),
-    slider2 = document.getElementById('disable2'),
-    checkbox1 = document.getElementById('checkbox1'),
-    checkbox2 = document.getElementById('checkbox2'),
-    checkbox3 = document.getElementById('checkbox3');
+var slider1 = document.getElementById('disable1');
+var slider2 = document.getElementById('disable2');
+var checkbox1 = document.getElementById('checkbox1');
+var checkbox2 = document.getElementById('checkbox2');
+var checkbox3 = document.getElementById('checkbox3');
 
 function toggle(checkbox, slider, handleNumber) {
 

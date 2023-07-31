@@ -78,7 +78,12 @@ var FormatOptions = [
 	// Accept a number as input, output formatted string.
 	function formatTo ( decimals, thousand, mark, prefix, suffix, encoder, decoder, negativeBefore, negative, edit, undo, input ) {
 
-		var originalInput = input, inputIsNegative, inputPieces, inputBase, inputDecimals = '', output = '';
+		var originalInput = input; 
+		var inputIsNegative; 
+		var inputPieces; 
+		var inputBase; 
+		var inputDecimals = ''; 
+		var output = '';
 
 		// Apply user encoder to the input.
 		// Expected outcome: number.
@@ -170,7 +175,7 @@ var FormatOptions = [
 	// Accept a sting as input, output decoded number.
 	function formatFrom ( decimals, thousand, mark, prefix, suffix, encoder, decoder, negativeBefore, negative, edit, undo, input ) {
 
-		var originalInput = input, inputIsNegative, output = '';
+		var originalInput = input; var inputIsNegative; var output = '';
 
 		// User defined pre-decoder. Result must be a non empty string.
 		if ( undo ) {
@@ -254,8 +259,8 @@ var FormatOptions = [
 	// Validate formatting options
 	function validate ( inputOptions ) {
 
-		var i, optionName, optionValue,
-			filteredOptions = {};
+		var i; var optionName; var optionValue;
+			var filteredOptions = {};
 
 		if ( inputOptions['suffix'] === undefined ) {
 			inputOptions['suffix'] = inputOptions['postfix'];
@@ -316,7 +321,7 @@ var FormatOptions = [
 
 	// Pass all options as function arguments
 	function passAll ( options, method, input ) {
-		var i, args = [];
+		var i; var args = [];
 
 		// Add all options in order of FormatOptions
 		for ( i = 0; i < FormatOptions.length; i+=1 ) {

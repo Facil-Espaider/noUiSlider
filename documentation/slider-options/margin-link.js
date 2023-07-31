@@ -1,5 +1,5 @@
-var marginMin = document.getElementById('slider-margin-value-min'),
-    marginMax = document.getElementById('slider-margin-value-max');
+var marginMin = document.getElementById('slider-margin-value-min');
+var marginMax = document.getElementById('slider-margin-value-max');
 
 marginSlider.noUiSlider.on('update', function (values, handle) {
     if (handle) {
